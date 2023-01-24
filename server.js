@@ -4,7 +4,10 @@ const {Server: IOServer} = require (`socket.io`);
 
 const PORT = process.env.PORT || 8080;
 const app = express();
-app.use(express.static(`/public`));
+app.use(express.static(
+    //`/public`
+    `${__dirname}/public`
+    ));
 
 const httpServer = new HttpServer(app);
 const io = new IOServer(httpServer);
