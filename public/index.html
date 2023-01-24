@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>CHATTY MC.CHAT</title>
+</head>
+<body>
+    <h1 class="title">Chatty MCchat</h1>
+    <div>
+        <img src="https://media2.giphy.com/media/1014RBn4HVSTK/giphy.gif?cid=ecf05e478bqhnlwd396toygu8am69tocuojl7ykh96wvjzhb&rid=giphy.gif&ct=g" alt="">
+    </div>
+    <p id="parrafo">"Chatty Mc.Chat los invita a murmurar de forma abierta, los agravios e insultos son altamente recomendados, en este espacio no existe la discriminacion... PORQUE NO HAY DERECHOS!"
+        -Jhonny Newlaw-
+    </p>
+    <div class="center" id="messages"></div>
+        <form class="formulario" onsubmit="return addMessage(this)">
+            <input  type="text" id="username" placeholder="Tu Apodo" required>
+            <input  type="text" id="text" placeholder="Escribe tu mensaje aqui">
+            <input  id="enviar" type="submit" value="ENVIAR" >
+        </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>    
+</body>
+</html>
+

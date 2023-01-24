@@ -1,0 +1,118 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+ 
+}
+.center {
+  position: relative;
+  max-height: 90%;
+  width: 75%;
+  padding: 50px 50px;
+  background: rgb(208, 252, 226);
+  border-radius: 10px;
+  margin: 2rem;
+  font-size: 1.2rem;
+  overflow-x: hidden;
+  overflow-y:auto;
+  text-align:justify;
+  scroll-behavior:smooth;
+  
+}
+
+.center::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; /* The height is only seen on horizontal scrolling */
+}
+
+.center::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+.center::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.title {
+  font-size: 2em;
+  border-left: 5px solid dodgerblue;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#parrafo{
+  width: 80%;
+  text-align: justify;
+  font-size: 1.5rem;
+  background-color: rgb(208, 252, 226);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+    background: rgb(208, 252, 226);
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+
+#username {
+  
+  top: 0;
+  left: 0;
+  width: 40%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin: 1rem;
+}
+
+#text {
+    
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 60%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin: 1rem;
+}
+
+#enviar {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 30%;
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+}
+#enviar:hover {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
